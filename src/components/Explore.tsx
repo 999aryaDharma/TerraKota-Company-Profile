@@ -25,6 +25,14 @@ const FeatureCard = ({ title, description, image }: { title: string; description
 	const handleClick = () => {
 		if (title === "Monitoring Real-time") {
 			navigate("/monitoring");
+    }
+    
+    if (title === "Sistem Hidroponik Modern") {
+      navigate("/hydroponic-tech");
+    }
+    
+    if (title === "Ruang Kolaborasi Tim") {
+			navigate("/colaboration");
 		}
 	};
 

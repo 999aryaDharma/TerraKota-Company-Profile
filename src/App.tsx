@@ -12,6 +12,8 @@ import Contact from "./components/Contact";
 import Explore from "./components/Explore";
 import { Monitor } from "lucide-react";
 import Monitoring from "./components/Monitoring";
+import HydroponicTech from "./components/HydroponicTech";
+import Colaborate from "./components/Colaborate";
 
 // Scroll to section helper
 function ScrollToSection() {
@@ -54,8 +56,10 @@ function App() {
 				<Routes>
 					<Route path="/" element={<HomePage />} />
 					<Route path="/explore" element={<Explore />} />
-          <Route path="/products/:productId" element={<ProductDetail />} />
-          <Route path="/monitoring" element={<Monitoring />} />
+					<Route path="/products/:productId" element={<ProductDetail />} />
+					<Route path="/monitoring" element={<Monitoring />} />
+					<Route path="/hydroponic-tech" element={<HydroponicTech />} />
+					<Route path="/colaboration" element={<Colaborate />} />
 				</Routes>
 			</div>
 		</Router>
